@@ -42,8 +42,8 @@ export default function TextField(props) {
           </div>
         </form>
         <button className="btn btn-primary my-1 mx-1" onClick={eventUpclicked}>To Upper Case</button>
-        <button className="btn btn-danger my-1 mx-1" onClick={eventloclicked}>To Lower Case</button>
-        <button className="btn btn-warning my-1 mx-1" onClick={handleExtraSpaces}>Handle Extra Spaces</button>
+        <button className={`btn btn-${props.modeR==='no'?'success':'danger'} my-1 mx-1`} onClick={eventloclicked}>To Lower Case</button>
+        <button className={`btn btn-${props.modeW==='yes'?'warning':'success'} my-1 mx-1`} onClick={handleExtraSpaces}>Handle Extra Spaces</button>
 
     </div>
     <div className="container my-1" style={{color:props.mode==='light'?'black':'white'}}>
