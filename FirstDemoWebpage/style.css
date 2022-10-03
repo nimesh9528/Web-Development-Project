@@ -1,0 +1,238 @@
+/*########Default ##########*/
+nav,footer,header{
+    display: block;
+}
+body{
+    line-height: 1;
+    margin: 0;
+}
+.container{
+    width:100%;
+    padding-top: 4%;
+    padding-bottom: 4%;
+    margin: auto;
+}
+label.webD{
+    font-size: 50px;
+    padding-left: 20px;
+}
+article p{
+    font-size: 30px;
+    padding: 20px;
+}
+
+.row{
+    width : 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.row::after{
+    display: table;
+    clear: both;
+    content :" ";
+}
+
+
+.col-1{width: 8.33%;}
+.col-2{width: 16.66%;}
+.col-3{width: 25%;}
+.col-4{width: 33.33%;}
+.col-5{width: 41.66%;}
+.col-6{width: 50%;}
+.col-7{width: 58.33%;}
+.col-8{width: 66.66%;}
+.col-9{width: 75%;}
+.col-10{width: 83.33%;}
+.col-11{width: 91.66%;}
+.col-12{width: 100%;}
+*{
+    box-sizing: border-box;
+}
+
+/*######   nav bar   ######*/
+nav{
+    width: 100%;
+    margin: 0;
+}
+nav ul{
+    background-color:#eee;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+ul.navbar li{
+    list-style: none;
+    float: left;
+}
+ul.navbar li.navbar-right{
+    float: right;
+}
+ul.navbar li a{
+    display: block;
+    text-decoration: none;
+    min-height: 16px;
+    text-align: center;
+    padding: 14px;
+    text-transform: uppercase;
+    color: #666;
+}
+ul.navbar li a:hover{
+    background-color: coral;
+    color: white;
+}
+ul.navbar li.dropdownIcon{
+    display: none;
+}
+
+/*######## container style ########*/
+#sec-1-gradient{
+    background : #4a8bbe;
+    background: -webkit-linear-gradient(#4a8bbe,#00fff4);
+    background: -moz-linear-gradient(#4dc1bc,#00fff4);
+    background: -o-linear-gradient(#4dc1bc,#00fff4);
+}
+#secton-3-gradient{
+     background : #cce5cc;
+  /*  background: -webkit-linear-gradient(#4a8bbe,#00fff4);*/
+}
+.leftside-col{
+    margin-left: 30%;
+}
+h1.large{
+    font-size: 46px;
+    color: aliceblue;
+    margin: 0;
+    line-height: 60px;
+}
+h2{
+    color: cornsilk;
+}
+input[type="text"]{
+    font-size: 30px;
+    width:400px;
+    min-width: 100px;
+    padding: 5px;
+    border-radius: 7px;
+}
+
+div.rightSide-col {
+    margin-left: 10%;
+}
+div.videoContainer iframe{
+    padding: 20px;
+}
+div.box{
+    text-align: center;
+    background-color: #fff;
+    margin :10px;
+    padding: 26px 15px 26px 15px;  
+    box-shadow: 0 2px 5px 5px rgba(0,0,0,.15),
+                0 1px 2px 0 rgba(0,0,0,1);
+    border-radius: 7px;
+}
+button{
+    font-size: 30px;
+    font-weight: bold;
+    color: azure;
+    background-color: #0069ff;
+    padding : 10px 50px;
+    margin: 5px;
+    text-align: center;
+    border-radius: 7px;
+}
+button.learn{
+    display: block;
+    margin:auto;
+}
+div.icon2 img{
+    display: block;
+    margin: auto;
+    box-shadow: -5px -10px 17px 5px rgba(0,0,0,.15),
+                5px 10px 15px 5px rgba(0,0,0,.1);
+}
+footer.fotsy{
+    background-color:#666;
+    padding-left: 10%;
+}
+footer.fotsy h1{
+    font-size: 30px;
+    color: cornsilk;
+}
+footer.fotsy ul{
+    list-style: none;
+    padding-left: 0;
+    text-align: left;
+}
+footer.fotsy ul li{
+    color:azure;
+    line-height: 1.5;
+    font-size: 22px;    
+}
+
+/*###### MOblie #######*/
+@media screen and (max-width: 650px){
+    ul.navbar li:not(:nth-child(1))
+    {
+        display: none;
+    }
+    ul.navbar li.dropdownIcon{
+        display: block;
+        float: right;
+    }
+    ul.navbar.mob li.dropdownIcon{
+        position:absolute;
+        top:0;
+        right:0;
+    }
+    ul.navbar.mob {
+        position: relative;
+    }
+    ul.navbar.mob li{
+        display: inline;
+        float:none;
+    }
+    ul.navbar.mob li a{
+        display:block;
+        text-align:left;
+    }
+    div.box{
+        padding:10px;
+        display: block;
+       
+    }
+    .col-6,.col-4,.col-5,.col-7{
+        width:100%;
+        margin:0;
+    }
+    div.mobleStack{
+        width:50%;
+        display:block;
+    }
+    label.webD{
+        font-size: 25px;
+    }
+    article p {
+        font-size: 20px;
+        padding: 10px;
+    }
+    div.icon2 img{
+        width: 100%;
+    }
+    div.icon2{
+        margin: 10px;
+    }
+    input[type="text"]{
+        width :350px;
+    }
+    div.rightSide-col, div.leftside-col{
+        margin:15%;
+    }
+    div.videoContainer iframe{
+        padding: 0;
+        position: relative;
+        margin:0;
+        overflow:hidden;
+        width:100%;
+    }
+}

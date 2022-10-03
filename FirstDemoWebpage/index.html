@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="en">
+<head> 
+    <title>My First Web Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <ul class="navbar" id="dropdownClick">
+            <li><a href="#Home"><b>Home</b></a></li>
+            <li><a href="#news"><b>news</b></a></li>
+            <li><a href="#about"><b>about</b></a></li>
+            <li><a href="#contact"><b>contact</b></a></li>
+            <li class ="navbar-right"><a href="#signup"><b>sign up</b></a></li>
+            <li class ="navbar-right"><a href="#signin"><b>sign in</b></a></li>
+            <li class="dropdownIcon"><a href ="javascript:void(0)" onclick="dropdownMenu()">&#9776;</a></li>
+        </ul>
+    
+    </nav>
+    <div class="container" id="sec-1-gradient">
+        <div class ="row">
+            <div class ="col-6 ">
+                <div class ="leftside-col">
+                    <h1 class ="large">Crazy Madness</h1>
+                    <h1 class ="large">Made for Developers</h1>
+                </div>
+                <form>
+                    <div class ="leftside-col">
+                        <h2>Username</h2>
+                        <input class ="inputbox" name="username" type="text" placeholder="Username">
+                        <h2>Password</h2>
+                        <input class ="inputbox" name="password" type="text" placeholder="Password">
+                    </div>
+                </form>
+            </div>
+            <div class ="col-6">
+                <div class ="rightSide-col">
+                    <div class ="videoContainer">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/P-pr_NZhFFg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </div>
+    <header>
+        <h1 class ="section2header">The Region Of Awesomeness</h1>
+    </header>
+    <div class="container">
+        <div class="row">
+            <div class="col-4">
+                <div class="box">
+                    <div class="icon">
+                        <img src="loin2.jpg">
+                    </div>
+                    <label>Chat With Me</label>
+                    <p>Hey I am Nimesh Sharma this is my first web page. I already know C ,C++, Java , and now I am looking forward to expertise in Web Dev, THANKS Hey I am Nimesh Sharma this is my first web page. I already know C ,C++, Java , and now I am looking forward to expertise in Web Dev, THANKS </p> 
+                </div>
+            </div>
+    
+            <div class="col-4">
+                <div class="box">
+                    <div class="icon">
+                        <img src="loin2.jpg">
+                    </div>
+                    <label>Lets Have Fun</label>
+                    <p>Hey I am Nimesh Sharma this is my first web page. I already know C ,C++, Java , and now I am looking forward to expertise in Web Dev, THANKS Hey I am Nimesh Sharma this is my first web page. I already know C ,C++, Java , and now I am looking forward to expertise in Web Dev, THANKS </p> 
+                </div>
+            </div>
+     
+            <div class="col-4">
+                <div class="box">
+                    <div class="icon">
+                        <img src="loin2.jpg">
+                    </div>
+                    <label>Have a Nice Day</label>
+                    <p>Hey I am Nimesh Sharma this is my first web page. I already know C ,C++, Java , and now I am looking forward to expertise in Web Dev, THANKS mesh Sharma this is my first web page. I already know </p> 
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            <button class="learn">Learn More</button>
+        </div>
+    </div>
+    
+    <hr>
+    <div class =" container" id ="secton-3-gradient">
+        <div class =" row">
+            <div class =" col-7">
+                <label class="webD">Web Development-</label>
+                <article> 
+                    <p>Web development refers to the building, creating, and maintaining of websites. It includes aspects such as web design, web publishing, web programming, and database management. It is the creation of an application that works over the internet i.e. websites.</p>
+                </article>
+            </div>
+            <div class="col-5">
+                <div class="icon2">
+                    <img src ="th.jpg">
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class =" fotsy">
+        <div class= "row">
+            <div class = "col-3 mobleStack">
+                <h1>Company</h1>
+                <ul>
+                    <li>About</li>
+                    <li>Carriers</li>
+                    <li>Blogs</li>
+                </ul>
+            </div>
+            <div class = "col-3 mobleStack">
+                <h1>Products</h1>
+                <ul>
+                    <li>Computer</li>
+                    <li>Ipad</li>
+                    <li>Iphone</li>
+                </ul>
+            </div>
+            <div class = "col-3 mobleStack">
+                <h1>Learn More</h1>
+                <ul>
+                    <li>Developer</li>
+                    <li>Designer</li>
+                    <li>Hacker</li>
+                </ul>
+            </div>
+            <div class = "col-3 mobleStack">
+                <h1>Support</h1>
+                <ul>
+                    <li>Help</li>
+                    <li>QnA</li>
+                    <li>Contact</li>
+                </ul>
+            </div>
+            
+        </div>
+    </footer>
+    
+    
+    
+    
+    <script>
+        function dropdownMenu()
+        {
+            var x=document.getElementById("dropdownClick");
+            if(x.className==="navbar"){
+                    x.className +=" mob";
+                }
+            else{
+                x.className = "navbar";
+            }
+        }
+    </script>
+</body>
+
+
+</html>
