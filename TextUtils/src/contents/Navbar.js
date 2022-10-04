@@ -1,26 +1,25 @@
 import React from 'react';
-//import About from './About'
-
+import { Link } from 'react-router-dom';
 export default function Navbar(props) {
   //const [Text,setText]= useState("Dark Mode");
   return (
     <nav className={`navbar navbar-expand-lg navbar-${props.mode} bg-${props.mode}`}>
         <div className="container-fluid">
-      <a className="navbar-brand" href="/">{props.title}</a>
+      <Link className="navbar-brand" to="/">{props.title}</Link>
       <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span className="navbar-toggler-icon"></span>
       </button>
       <div className="collapse navbar-collapse" id="navbarNav">
         <ul className="navbar-nav">
           <li className="nav-item">
-            <a className="nav-link active" aria-current="page" href="/">Home</a>
+            <Link className="nav-link active" aria-current="page" to="/">Home</Link>
           </li>
           <li className="nav-item">
-            <a className="nav-link" href="/">Features</a>
+            <Link className="nav-link" to="/">Features</Link>
           </li>
           
           <li className="nav-item">
-            <a className="nav-link " href='{window.location.href: About}'>{props.about}</a>
+            <Link className="nav-link " to='/about'>{props.about}</Link>
           </li>
         </ul>
         {/* <div className={`form-check form-switch text-${props.mode==='light'?'dark':'light'}`}>
@@ -30,10 +29,7 @@ export default function Navbar(props) {
        <botton className="btn btn-warning mx-2" onClick={props.changeModeWarning}></botton>
        <botton className="btn btn-danger mx-2" onClick={props.changeModeRed}></botton> 
        <botton className={`btn btn-${props.mode==='dark'?'light':'dark'} mx-2`} onClick={props.changeMode}></botton>
-        {/* <form className="d-flex" role="search">
-          <input className="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
-          <button className="btn btn-outline-success" type="submit">Search</button>
-        </form> */}
+  
       </div>
     </div>
   </nav>

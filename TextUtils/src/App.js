@@ -3,7 +3,12 @@ import './App.css';
 import Alert from './contents/Alert';
 import Navbar from './contents/Navbar';
 import TextField from './contents/TextField';
-//import About from './contents/About';
+import About from './contents/About';
+import {
+  BrowserRouter as Router,
+  Routes ,
+  Route
+    } from "react-router-dom";
 function App() {
   const[mode,setMode] = useState("light");
   const[ alert, setAlert]=useState(null);
@@ -72,10 +77,18 @@ function App() {
     }
   
   return (
-    <>  
+    <> 
+    <Router> 
       <Navbar title="TextUtiles" about=" About TextUtiles" mode={mode} changeMode={changemode} changeModeWarning={changeModeWarning} changeModeRed={changeModeRed}/>
       <Alert alert={alert}/>
-      <TextField mode={mode} showAlert={showAlert} modeR={modeR} modeW={modeW}/>
+      <Routes>
+          <Route   path="/about" 
+            element= {<About/>}/>
+          <Route  path="/" 
+            element ={<TextField showAlert={showAlert} mode={mode} modeR={modeR} modeW={modeW}/> } />
+            
+        </Routes>
+    </Router>
 </>
   );
 }
